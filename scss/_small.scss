@@ -175,7 +175,6 @@ main {
   }
 }
 
-/* How We Can Help Section */
 .how-we-can-help {
   text-align: center;
   padding: 4rem 2rem;
@@ -185,6 +184,7 @@ main {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
   }
 
   .card {
@@ -192,7 +192,8 @@ main {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px #beb7b7;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
+    width: 100%;
 
     &:hover {
       transform: translateY(-5px);
@@ -211,7 +212,6 @@ main {
 
     ul {
       margin-top: 1rem;
-
       li {
         margin-bottom: 0.5rem;
         color: #332727;
@@ -220,14 +220,14 @@ main {
   }
 }
 
-/* Clients Section */
+
+
+/* ========================
+   CLIENTS SECTION
+======================== */
 .clients {
   text-align: center;
   padding: 4rem 2rem;
-
-  h2 {
-    font-size: 2rem;
-  }
 
   .client-logos {
     display: flex;
@@ -249,7 +249,9 @@ main {
   }
 }
 
-/* Footer */
+/* ========================
+   FOOTER
+======================== */
 footer {
   background-color: #111;
   color: #eee;
@@ -266,10 +268,6 @@ footer {
     flex-direction: column;
     gap: 2rem;
     margin: 2rem 0;
-
-    div {
-      line-height: 1.4;
-    }
   }
 
   p {

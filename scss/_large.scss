@@ -2,34 +2,38 @@
    LARGE SCREEN STYLES
    (≥ 1024px)
 ========================= */
-header, nav, main, footer {
+
+header, #navWrapper, main, footer {
   max-width: 65rem;
   margin: auto;
 }
+
 @media (min-width: $breakpoint-large) {
+
+  /* HIDE BURGER MENU */
   .ham {
     display: none;
   }
 
-  nav {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+  /* FIX NAVIGATION */
+  #navWrapper nav {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: auto !important;     // <--- ADD THIS
-    overflow: visible !important; // <--- ADD THIS
     background: none;
     gap: 2rem;
     padding: 1rem 0;
-    
+    height: auto;          // <<< Fix nav not showing
+    overflow: visible;     // <<< Fix nav not showing
+
     a {
       padding: 0.5rem 1rem;
-      text-align: center;
       color: white;
+      text-decoration: none;
+      font-weight: $mediumWeight;
       background: none;
-      
+
       &:hover {
         background-color: lighten($darkBlue, 10%);
       }
@@ -40,11 +44,8 @@ header, nav, main, footer {
       }
     }
   }
-}
 
-
-
-  /* HERO (large screen) */
+  /* HERO Section (large screen) */
   .hero div {
     background: rgba(0, 0, 0, 0.3);
     padding: 2rem 3rem;
@@ -63,13 +64,13 @@ header, nav, main, footer {
     color: aliceblue;
   }
 
-  /* HOW WE CAN HELP (large screen) */
+  /* HOW WE CAN HELP Section (large screen) */
   .how-we-can-help .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);  // <<< 4 cards horizontally
     gap: 2rem;
   }
 
-  /* CLIENTS (large screen) */
+  /* CLIENTS Section (large screen) */
   .clients .client-logos img {
     max-width: 120px;
   }
@@ -80,7 +81,8 @@ header, nav, main, footer {
     gap: 6rem;
   }
 
-  footer p, footer a {
+  footer p,
+  footer a {
     font-size: 1rem;
   }
-
+}
