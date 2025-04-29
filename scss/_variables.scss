@@ -1,0 +1,30 @@
+
+
+// COLORS
+$primaryColor: #1A1A40;        // Soft snow-gray (backgrounds, accents)
+$secondaryColor: #b8535b; 
+$accent-color: #eee;     // Deep forest blue (headings, nav hover)
+$tertiaryColor: #a67a7a;       // Teal blue (buttons, accents)
+$quadrunaryColor: #bda8a8; 
+$card-background: #b9757b;   // Light aqua blue (highlights, hover effects)
+$fontColor: #040404;           // Very dark gray (text)
+
+// Shades for additional styling
+$darkBlue: $secondaryColor;
+$mediumBlue: $tertiaryColor;
+$lightBlue: $quadrunaryColor;
+
+// TYPOGRAPHY
+$bodyFont: "M PLUS Rounded 1c", sans-serif;
+$displayFont: "Red Hat Display", sans-serif;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$mediumWeight: 500;
+$boldWeight: 700;
+
+// SPACING
+$gutter: 16px;
+
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;

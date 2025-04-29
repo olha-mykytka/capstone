@@ -1,0 +1,86 @@
+/* =========================
+   LARGE SCREEN STYLES
+   (≥ 1024px)
+========================= */
+header, nav, main, footer {
+  max-width: 65rem;
+  margin: auto;
+}
+@media (min-width: $breakpoint-large) {
+  .ham {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;     // <--- ADD THIS
+    overflow: visible !important; // <--- ADD THIS
+    background: none;
+    gap: 2rem;
+    padding: 1rem 0;
+    
+    a {
+      padding: 0.5rem 1rem;
+      text-align: center;
+      color: white;
+      background: none;
+      
+      &:hover {
+        background-color: lighten($darkBlue, 10%);
+      }
+
+      &.active {
+        background-color: #d4bbbb;
+        color: black;
+      }
+    }
+  }
+}
+
+
+
+  /* HERO (large screen) */
+  .hero div {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    max-width: 70%;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: aliceblue;
+  }
+
+  .hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+  }
+
+  /* HOW WE CAN HELP (large screen) */
+  .how-we-can-help .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  /* CLIENTS (large screen) */
+  .clients .client-logos img {
+    max-width: 120px;
+  }
+
+  /* FOOTER (large screen) */
+  footer .locations {
+    justify-content: space-around;
+    gap: 6rem;
+  }
+
+  footer p, footer a {
+    font-size: 1rem;
+  }
+
